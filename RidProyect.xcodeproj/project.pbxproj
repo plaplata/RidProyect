@@ -12,9 +12,12 @@
 		9D52C9D4279A0F890078F397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52C9D3279A0F890078F397 /* ViewController.swift */; };
 		9D52C9D7279A0F890078F397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D52C9D5279A0F890078F397 /* Main.storyboard */; };
 		9D52C9D9279A0F8A0078F397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D52C9D8279A0F8A0078F397 /* Assets.xcassets */; };
-		9D52C9DC279A0F8A0078F397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D52C9DA279A0F8A0078F397 /* LaunchScreen.storyboard */; };
 		9DAC368C279A17D300CC863A /* Registro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC368B279A17D300CC863A /* Registro.storyboard */; };
 		9DAC368E279A17F400CC863A /* Recuperar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC368D279A17F400CC863A /* Recuperar.storyboard */; };
+		FA606F06279BBA0E00BD1935 /* rid-logo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA606F02279BBA0E00BD1935 /* rid-logo1.jpg */; };
+		FA606F07279BBA0E00BD1935 /* rid-logo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA606F03279BBA0E00BD1935 /* rid-logo2.jpg */; };
+		FA606F08279BBA0E00BD1935 /* rid2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA606F04279BBA0E00BD1935 /* rid2.jpg */; };
+		FA606F09279BBA0E00BD1935 /* rid1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA606F05279BBA0E00BD1935 /* rid1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +27,13 @@
 		9D52C9D3279A0F890078F397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D52C9D6279A0F890078F397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D52C9D8279A0F8A0078F397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D52C9DB279A0F8A0078F397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D52C9DD279A0F8A0078F397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DAC368B279A17D300CC863A /* Registro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registro.storyboard; sourceTree = "<group>"; };
 		9DAC368D279A17F400CC863A /* Recuperar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recuperar.storyboard; sourceTree = "<group>"; };
+		FA606F02279BBA0E00BD1935 /* rid-logo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "rid-logo1.jpg"; path = "../../../../../Downloads/rid-logo1.jpg"; sourceTree = "<group>"; };
+		FA606F03279BBA0E00BD1935 /* rid-logo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "rid-logo2.jpg"; path = "../../../../../Downloads/rid-logo2.jpg"; sourceTree = "<group>"; };
+		FA606F04279BBA0E00BD1935 /* rid2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rid2.jpg; path = ../../../../../Downloads/rid2.jpg; sourceTree = "<group>"; };
+		FA606F05279BBA0E00BD1935 /* rid1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rid1.jpg; path = ../../../../../Downloads/rid1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				9DAC368B279A17D300CC863A /* Registro.storyboard */,
-				9D52C9DA279A0F8A0078F397 /* LaunchScreen.storyboard */,
 				9D52C9D5279A0F890078F397 /* Main.storyboard */,
 				9DAC368D279A17F400CC863A /* Recuperar.storyboard */,
 			);
@@ -93,6 +98,10 @@
 		9DAC3691279A189D00CC863A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FA606F02279BBA0E00BD1935 /* rid-logo1.jpg */,
+				FA606F03279BBA0E00BD1935 /* rid-logo2.jpg */,
+				FA606F05279BBA0E00BD1935 /* rid1.jpg */,
+				FA606F04279BBA0E00BD1935 /* rid2.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -155,8 +164,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D52C9DC279A0F8A0078F397 /* LaunchScreen.storyboard in Resources */,
+				FA606F08279BBA0E00BD1935 /* rid2.jpg in Resources */,
+				FA606F07279BBA0E00BD1935 /* rid-logo2.jpg in Resources */,
 				9DAC368C279A17D300CC863A /* Registro.storyboard in Resources */,
+				FA606F09279BBA0E00BD1935 /* rid1.jpg in Resources */,
+				FA606F06279BBA0E00BD1935 /* rid-logo1.jpg in Resources */,
 				9D52C9D9279A0F8A0078F397 /* Assets.xcassets in Resources */,
 				9DAC368E279A17F400CC863A /* Recuperar.storyboard in Resources */,
 				9D52C9D7279A0F890078F397 /* Main.storyboard in Resources */,
@@ -185,14 +197,6 @@
 				9D52C9D6279A0F890078F397 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9D52C9DA279A0F8A0078F397 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9D52C9DB279A0F8A0078F397 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -321,7 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BB3Q5D42KA;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RidProyect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -329,6 +333,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,7 +354,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BB3Q5D42KA;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RidProyect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -357,6 +362,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
