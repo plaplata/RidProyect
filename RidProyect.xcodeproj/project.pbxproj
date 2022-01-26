@@ -14,10 +14,6 @@
 		9D52C9D9279A0F8A0078F397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D52C9D8279A0F8A0078F397 /* Assets.xcassets */; };
 		9DAC368C279A17D300CC863A /* Registro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC368B279A17D300CC863A /* Registro.storyboard */; };
 		9DAC368E279A17F400CC863A /* Recuperar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC368D279A17F400CC863A /* Recuperar.storyboard */; };
-		FA606F06279BBA0E00BD1935 /* rid-logo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA606F02279BBA0E00BD1935 /* rid-logo1.jpg */; };
-		FA606F07279BBA0E00BD1935 /* rid-logo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA606F03279BBA0E00BD1935 /* rid-logo2.jpg */; };
-		FA606F08279BBA0E00BD1935 /* rid2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA606F04279BBA0E00BD1935 /* rid2.jpg */; };
-		FA606F09279BBA0E00BD1935 /* rid1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA606F05279BBA0E00BD1935 /* rid1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +26,6 @@
 		9D52C9DD279A0F8A0078F397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DAC368B279A17D300CC863A /* Registro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registro.storyboard; sourceTree = "<group>"; };
 		9DAC368D279A17F400CC863A /* Recuperar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recuperar.storyboard; sourceTree = "<group>"; };
-		FA606F02279BBA0E00BD1935 /* rid-logo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "rid-logo1.jpg"; path = "../../../../../Downloads/rid-logo1.jpg"; sourceTree = "<group>"; };
-		FA606F03279BBA0E00BD1935 /* rid-logo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "rid-logo2.jpg"; path = "../../../../../Downloads/rid-logo2.jpg"; sourceTree = "<group>"; };
-		FA606F04279BBA0E00BD1935 /* rid2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rid2.jpg; path = ../../../../../Downloads/rid2.jpg; sourceTree = "<group>"; };
-		FA606F05279BBA0E00BD1935 /* rid1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rid1.jpg; path = ../../../../../Downloads/rid1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +90,6 @@
 		9DAC3691279A189D00CC863A /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				FA606F02279BBA0E00BD1935 /* rid-logo1.jpg */,
-				FA606F03279BBA0E00BD1935 /* rid-logo2.jpg */,
-				FA606F05279BBA0E00BD1935 /* rid1.jpg */,
-				FA606F04279BBA0E00BD1935 /* rid2.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -164,11 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA606F08279BBA0E00BD1935 /* rid2.jpg in Resources */,
-				FA606F07279BBA0E00BD1935 /* rid-logo2.jpg in Resources */,
 				9DAC368C279A17D300CC863A /* Registro.storyboard in Resources */,
-				FA606F09279BBA0E00BD1935 /* rid1.jpg in Resources */,
-				FA606F06279BBA0E00BD1935 /* rid-logo1.jpg in Resources */,
 				9D52C9D9279A0F8A0078F397 /* Assets.xcassets in Resources */,
 				9DAC368E279A17F400CC863A /* Recuperar.storyboard in Resources */,
 				9D52C9D7279A0F890078F397 /* Main.storyboard in Resources */,
