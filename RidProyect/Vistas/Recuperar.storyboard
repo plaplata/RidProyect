@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,16 +16,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recuperar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8j-9A-Xhf">
-                                <rect key="frame" x="143" y="224" width="79" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8j-9A-Xhf">
+                                <rect key="frame" x="20" y="220" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.85490196939999996" green="0.97647058959999999" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NWe-hD-YUa">
+                                <rect key="frame" x="20" y="253" width="374" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="DMd-Q8-xio"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuperar contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2Z-dp-aZi">
+                                <rect key="frame" x="65" y="84" width="284" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.82352941180000006" green="0.98039215690000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4v-af-aWZ">
+                                <rect key="frame" x="294" y="319" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.98039215690000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="413-ap-jbf"/>
+                                    <constraint firstAttribute="width" constant="100" id="fyX-1I-k5D"/>
+                                </constraints>
+                                <state key="normal" title="Enviar correo">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.82352941180000006" green="0.98039215690000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U2Z-dp-aZi" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0Fq-Cn-0w9"/>
+                            <constraint firstItem="O8j-9A-Xhf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="1nC-9s-XsV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Y4v-af-aWZ" secondAttribute="trailing" constant="20" id="B8X-CH-gtI"/>
+                            <constraint firstItem="O8j-9A-Xhf" firstAttribute="top" secondItem="U2Z-dp-aZi" secondAttribute="bottom" constant="100" id="FlE-6W-yzG"/>
+                            <constraint firstItem="U2Z-dp-aZi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="H6g-XC-m8Z"/>
+                            <constraint firstItem="NWe-hD-YUa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="JFY-mA-zmy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NWe-hD-YUa" secondAttribute="trailing" constant="20" id="M6a-Ck-vrC"/>
+                            <constraint firstItem="Y4v-af-aWZ" firstAttribute="top" secondItem="NWe-hD-YUa" secondAttribute="bottom" constant="24" id="Vaf-l6-eNR"/>
+                            <constraint firstItem="NWe-hD-YUa" firstAttribute="top" secondItem="O8j-9A-Xhf" secondAttribute="bottom" constant="12" id="dYg-Aj-vNl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KAs-I2-tGE"/>
                 </viewController>
@@ -35,9 +72,4 @@
             <point key="canvasLocation" x="468" y="66"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
