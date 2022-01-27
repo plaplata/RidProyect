@@ -23,13 +23,13 @@
                                 <color key="textColor" red="0.82352941176470584" green="0.98039215686274506" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.82352941176470584" green="0.98039215686274506" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGI-e2-cvH">
-                                <rect key="frame" x="20" y="208" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGI-e2-cvH">
+                                <rect key="frame" x="20" y="208" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.82352941180000006" green="0.98039215690000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo Electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypN-Oj-5vt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypN-Oj-5vt">
                                 <rect key="frame" x="20" y="303" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.82352941180000006" green="0.98039215690000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,10 +92,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arT-AY-YzA">
-                                <rect key="frame" x="143" y="812" width="128" height="30"/>
-                                <state key="normal" title="¿Ya tienes cuenta?">
-                                    <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <rect key="frame" x="137" y="802" width="140" height="30"/>
+                                <state key="normal" title="Ya tengo una cuenta">
+                                    <color key="titleColor" red="0.85490196939999996" green="0.97647058959999999" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ZPT-3H-haz" kind="show" id="8vk-pg-egg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIa-yx-qhb">
                                 <rect key="frame" x="135" y="54" width="144" height="36"/>
@@ -115,22 +118,21 @@
                             <constraint firstItem="TGp-YH-t3N" firstAttribute="top" secondItem="wI0-XQ-bY0" secondAttribute="bottom" constant="12" id="DwH-iC-5T1"/>
                             <constraint firstItem="wI0-XQ-bY0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="EAM-Tt-peA"/>
                             <constraint firstItem="oGI-e2-cvH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Ec4-ig-zR2"/>
+                            <constraint firstItem="arT-AY-YzA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FQg-sG-Zx7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CcY-Ig-OFc" secondAttribute="trailing" constant="20" id="IWv-Fq-ad0"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="arT-AY-YzA" secondAttribute="bottom" constant="20" id="JPc-EG-QxF"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TGp-YH-t3N" secondAttribute="trailing" constant="20" id="K8K-IF-bSf"/>
                             <constraint firstItem="WAH-uV-6Hv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="MXe-B0-LQm"/>
                             <constraint firstItem="ypN-Oj-5vt" firstAttribute="top" secondItem="WAH-uV-6Hv" secondAttribute="bottom" constant="20" id="NIO-Jt-qOl"/>
                             <constraint firstItem="CcY-Ig-OFc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="NaG-vd-u6B"/>
                             <constraint firstItem="CcY-Ig-OFc" firstAttribute="top" secondItem="ypN-Oj-5vt" secondAttribute="bottom" constant="12" id="Oxd-pk-qow"/>
                             <constraint firstItem="Qgr-fK-yXe" firstAttribute="top" secondItem="pH7-x1-ggP" secondAttribute="bottom" constant="12" id="SpQ-2A-Aja"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="arT-AY-YzA" secondAttribute="bottom" constant="30" id="SqQ-bS-CId"/>
                             <constraint firstItem="pH7-x1-ggP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Tam-d3-7gd"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ypN-Oj-5vt" secondAttribute="trailing" constant="20" id="Whv-uP-6wQ"/>
                             <constraint firstItem="eEh-zb-r63" firstAttribute="top" secondItem="Qgr-fK-yXe" secondAttribute="bottom" constant="24" id="cWe-Y5-5r6"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GIa-yx-qhb" secondAttribute="trailing" constant="135" id="ccM-Gd-8Yj"/>
                             <constraint firstItem="TGp-YH-t3N" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="exf-oM-ZUF"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eEh-zb-r63" secondAttribute="trailing" constant="20" id="fjp-2w-06y"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="arT-AY-YzA" secondAttribute="trailing" constant="143" id="fpS-do-MUk"/>
-                            <constraint firstItem="arT-AY-YzA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="143" id="gii-eS-R01"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Qgr-fK-yXe" secondAttribute="trailing" constant="20" id="k4Y-4b-npE"/>
                             <constraint firstItem="Qgr-fK-yXe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="kfR-Jx-rdq"/>
                             <constraint firstItem="WAH-uV-6Hv" firstAttribute="top" secondItem="oGI-e2-cvH" secondAttribute="bottom" constant="12" id="m6E-EU-7Q0"/>
@@ -144,6 +146,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="672.46376811594212" y="67.633928571428569"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="c0v-ok-Ze7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="LoginViewController" id="ZPT-3H-haz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bCJ-EJ-l7b"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9w-wO-ldK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="427"/>
         </scene>
         <!--Registro View Controller-->
         <scene sceneID="gF8-Ob-X1c">
@@ -163,9 +175,6 @@
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
