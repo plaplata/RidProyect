@@ -55,7 +55,7 @@ class RegistroViewController: UIViewController {
         }
         let LimpiarPassword = PasswordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         if Utilities.esPasswordValido(LimpiarPassword) == false{
-            return "Por favor asegurate de que tu contraseña tenga al menos 8 caracteres, o que no tenga ningun caracter especial"
+            return "Por favor asegurate de que tu contraseña tenga al menos 8 caracteres, que incluya almenos una letra y un caracter especial"
         }
         
         return nil
@@ -92,7 +92,7 @@ class RegistroViewController: UIViewController {
                         self.showError("Error guardando el usuario")
                     }
                 }
-                self.transicionInicio()
+                //self.transicionInicio()
             }
         }
     }
@@ -101,11 +101,11 @@ class RegistroViewController: UIViewController {
         ErrorLabel.text = message
         ErrorLabel.alpha = 1
     }
-        func transicionInicio() {
+       /* func transicionInicio() {
                 
             let IncioViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.IncioViewController) as? InicioViewController
                 
                 view.window?.rootViewController = IncioViewController
                 view.window?.makeKeyAndVisible()
-            }
+            }*/
 }

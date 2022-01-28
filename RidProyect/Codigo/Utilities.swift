@@ -39,6 +39,7 @@ class Utilities {
     static func esPasswordValido(_ password : String) -> Bool {
         
         let passwordInvalido = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        print("ERROR DENTRO DE UTILLITIES")
         return passwordInvalido.evaluate(with: password)
     }
     
