@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--Registro View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="RegistroViewController" id="Y6W-OH-hqX" customClass="RegistroViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistroViewController" id="Y6W-OH-hqX" customClass="RegistroViewController" customModule="RidProyect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="RegistroViewController" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,8 +97,7 @@
                                     <color key="titleColor" red="0.85490196939999996" green="0.97647058959999999" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="YTCuentaTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bhc-iv-Y3s"/>
-                                    <segue destination="ZPT-3H-haz" kind="show" id="8vk-pg-egg"/>
+                                    <action selector="clickBtnBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yIB-Ba-Pt8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIa-yx-qhb">
@@ -155,25 +155,14 @@
                         <outlet property="ApellidosTextField" destination="WAH-uV-6Hv" id="pMb-51-rkl"/>
                         <outlet property="CorreoTextField" destination="CcY-Ig-OFc" id="eP4-W6-PJc"/>
                         <outlet property="ErrorLabel" destination="hVh-vi-MSB" id="N4C-rC-D8O"/>
-                        <outlet property="NombreTextField" destination="TGp-YH-t3N" id="5QJ-iq-ioI"/>
                         <outlet property="PasswordTextField" destination="Qgr-fK-yXe" id="tBb-8t-AuH"/>
                         <outlet property="RegistrarseBtn" destination="eEh-zb-r63" id="LXe-BL-aPw"/>
-                        <outlet property="YTCuentaBtn" destination="arT-AY-YzA" id="9OR-14-JUC"/>
+                        <outlet property="nombreTextField" destination="TGp-YH-t3N" id="5QJ-iq-ioI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="70" y="94"/>
-        </scene>
-        <!--LoginViewController-->
-        <scene sceneID="c0v-ok-Ze7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="LoginViewController" id="ZPT-3H-haz" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="bCJ-EJ-l7b"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s9w-wO-ldK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="70" y="485"/>
         </scene>
         <!--Inicio View Controller-->
         <scene sceneID="gF8-Ob-X1c">

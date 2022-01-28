@@ -13,7 +13,7 @@ import Firebase
 class RegistroViewController: UIViewController {
     
 
-    @IBOutlet weak var NombreTextField: UITextField!
+    @IBOutlet weak var nombreTextField: UITextField!
     
     @IBOutlet weak var ApellidosTextField: UITextField!
     
@@ -24,6 +24,10 @@ class RegistroViewController: UIViewController {
     @IBOutlet weak var RegistrarseBtn: UIButton!
     
     @IBOutlet weak var ErrorLabel: UILabel!
+    
+    @IBAction func clickBtnBack(_ sender:Any) {
+        self.navigationController?.popViewController(animated: true);
+    }
     
     
     override func viewDidLoad() {
@@ -43,7 +47,7 @@ class RegistroViewController: UIViewController {
     func validarCampos() -> String? {
         
         //Validar que todos los campos están llenos
-        if  NombreTextField.text?.trimmingCharacters(in:      .whitespacesAndNewlines) == "" ||
+        if  nombreTextField.text?.trimmingCharacters(in:      .whitespacesAndNewlines) == "" ||
             ApellidosTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             CorreoTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             PasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
@@ -59,38 +63,36 @@ class RegistroViewController: UIViewController {
 
     @IBAction func RegistrarseTapped(_ sender: Any) {
         
-    let error = validarCampos()
-        if error != nil {
-            showError(error!)
+        if let error = validarCampos() {
+            showError(error)
+            return
         }
-        else {
-            	
-            let nombre = NombreTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
-            let apellido = ApellidosTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
-            let email = CorreoTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
-            let password = PasswordTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
+        
+        let nombre = nombreTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
+        let apellido = ApellidosTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
+        let email = CorreoTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
+        let password = PasswordTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
             
-            Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
+            if err != nil {
+                self.showError("Error creando usuario")
+            }
+            else{
                 
-                if err != nil {
-                    self.showError("Error creando usuario")
-                }
-                else{
+                let db = Firestore.firestore()
+                
+                db.collection("users").addDocument(data: [
+                        "Nombre":nombre,
+                        "Apellido":apellido,
+                        "uid":result!.user.uid
+                ]) {(error) in
                     
-                    let db = Firestore.firestore()
-                    
-                    db.collection("users").addDocument(data: [
-                            "Nombre":nombre,
-                            "Apellido":apellido,
-                            "uid":result!.user.uid
-                    ]) {(error) in
-                        
-                        if error != nil {
-                            self.showError("Error guardando el usuario")
-                        }
+                    if error != nil {
+                        self.showError("Error guardando el usuario")
                     }
-                    self.transicionInicio()
                 }
+                self.transicionInicio()
             }
         }
     }
