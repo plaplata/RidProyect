@@ -15,11 +15,11 @@ class RegistroViewController: UIViewController {
 
     @IBOutlet weak var nombreTextField: UITextField!
     
-    @IBOutlet weak var ApellidosTextField: UITextField!
+    @IBOutlet weak var apellidosTextField: UITextField!
     
-    @IBOutlet weak var CorreoTextField: UITextField!
+    @IBOutlet weak var correoTextField: UITextField!
     
-    @IBOutlet weak var PasswordTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var RegistrarseBtn: UIButton!
     
@@ -48,13 +48,14 @@ class RegistroViewController: UIViewController {
         
         //Validar que todos los campos están llenos
         if  nombreTextField.text?.trimmingCharacters(in:      .whitespacesAndNewlines) == "" ||
-            ApellidosTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            CorreoTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            PasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            apellidosTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            correoTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             return "Por favor llena todos los campos"
         }
-        let LimpiarPassword = PasswordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        if Utilities.esPasswordValido(LimpiarPassword) == false{
+        let limpiarPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if Utilities.esPasswordValido(limpiarPassword) == false{
             return "Por favor asegurate de que tu contraseña tenga al menos 8 caracteres, que incluya almenos una letra y un caracter especial"
         }
         
@@ -69,9 +70,9 @@ class RegistroViewController: UIViewController {
         }
         
         let nombre = nombreTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
-        let apellido = ApellidosTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
-        let email = CorreoTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
-        let password = PasswordTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
+        let apellido = apellidosTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
+        let email = correoTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
         
         Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
             
@@ -92,7 +93,7 @@ class RegistroViewController: UIViewController {
                         self.showError("Error guardando el usuario")
                     }
                 }
-                //self.transicionInicio()
+                self.transicionInicio()
             }
         }
     }
@@ -101,11 +102,11 @@ class RegistroViewController: UIViewController {
         ErrorLabel.text = message
         ErrorLabel.alpha = 1
     }
-       /* func transicionInicio() {
+       func transicionInicio() {
                 
             let IncioViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.IncioViewController) as? InicioViewController
                 
                 view.window?.rootViewController = IncioViewController
                 view.window?.makeKeyAndVisible()
-            }*/
+        }
 }

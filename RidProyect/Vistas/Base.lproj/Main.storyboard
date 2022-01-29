@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iw6-cm-93j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iw6-cm-93j">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--Iniciar Sesión-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="RidProyect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,6 +69,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" red="0.82352941180000006" green="0.98039215690000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ingresarBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JTL-nk-du5"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p8w-L4-fMs">
                                         <rect key="frame" x="0.0" y="61" width="374" height="42"/>
@@ -77,12 +81,21 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dma-KW-2lZ">
+                                        <rect key="frame" x="20" y="236" width="154" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.65098041299999998" green="0.15686275059999999" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="highlightedColor" red="0.65098041299999998" green="0.15686275059999999" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="p8w-L4-fMs" secondAttribute="trailing" id="3Nl-LN-lqv"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="neD-mK-0Xm" secondAttribute="trailing" constant="20" symbolic="YES" id="4lz-SZ-saO"/>
+                                    <constraint firstItem="dma-KW-2lZ" firstAttribute="leading" secondItem="pbm-ji-jd8" secondAttribute="leading" constant="20" id="7iJ-H2-CsQ"/>
                                     <constraint firstItem="neD-mK-0Xm" firstAttribute="leading" secondItem="pbm-ji-jd8" secondAttribute="leading" id="B02-kf-K5B"/>
+                                    <constraint firstItem="dma-KW-2lZ" firstAttribute="top" secondItem="lTR-q9-Xhg" secondAttribute="bottom" constant="30" id="BoE-47-DKX"/>
+                                    <constraint firstItem="tIe-Xq-QB0" firstAttribute="leading" secondItem="dma-KW-2lZ" secondAttribute="trailing" constant="20" id="Cn5-VA-JrW"/>
                                     <constraint firstItem="p8w-L4-fMs" firstAttribute="leading" secondItem="pbm-ji-jd8" secondAttribute="leading" id="E35-hh-h4L"/>
                                     <constraint firstItem="p8w-L4-fMs" firstAttribute="top" secondItem="neD-mK-0Xm" secondAttribute="bottom" constant="20" id="FLd-pf-e3m"/>
                                     <constraint firstItem="lTR-q9-Xhg" firstAttribute="top" secondItem="VOW-88-xEF" secondAttribute="bottom" constant="20" id="H93-NS-BJC"/>
@@ -142,10 +155,43 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Iniciar Sesión" id="fLc-xe-3K7"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="p8w-L4-fMs" id="V3K-V5-DKU"/>
+                        <outlet property="errorLabel" destination="dma-KW-2lZ" id="nvm-Fr-Uxl"/>
+                        <outlet property="ingresarBtn" destination="tIe-Xq-QB0" id="TTy-Ry-FVb"/>
+                        <outlet property="passwordTextField" destination="lTR-q9-Xhg" id="efZ-80-t0E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="65.625"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="WCF-BH-oQv">
+            <objects>
+                <viewController storyboardIdentifier="InicioVC" id="FHO-kF-9LR" customClass="MainViewController" customModule="RidProyect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hwi-3e-Gb7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BIENVENIDO!!!!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hu8-2N-lmB">
+                                <rect key="frame" x="143" y="437.5" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.65098041299999998" green="0.15686275059999999" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9jG-tm-nJc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hu8-2N-lmB" firstAttribute="centerX" secondItem="hwi-3e-Gb7" secondAttribute="centerX" id="Eyt-SZ-zxC"/>
+                            <constraint firstItem="hu8-2N-lmB" firstAttribute="centerY" secondItem="hwi-3e-Gb7" secondAttribute="centerY" id="REI-Hq-iCv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQB-kr-tcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1817" y="66"/>
         </scene>
         <!--RegistroViewController-->
         <scene sceneID="thd-YA-M6K">
@@ -155,7 +201,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eod-fW-VLT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1668" y="71"/>
+            <point key="canvasLocation" x="1537" y="275"/>
         </scene>
         <!--RecuperarViewController-->
         <scene sceneID="uzd-4r-c2u">
@@ -165,7 +211,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGs-bc-8EM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1724" y="219"/>
+            <point key="canvasLocation" x="946" y="476"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Phj-6G-fsK">
@@ -195,6 +241,9 @@
         <image name="letters-black.logo" width="360" height="360"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

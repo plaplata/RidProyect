@@ -20,6 +20,7 @@
 		9D52C9D9279A0F8A0078F397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D52C9D8279A0F8A0078F397 /* Assets.xcassets */; };
 		9DAC368C279A17D300CC863A /* Registro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC368B279A17D300CC863A /* Registro.storyboard */; };
 		9DAC368E279A17F400CC863A /* Recuperar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DAC368D279A17F400CC863A /* Recuperar.storyboard */; };
+		9DB83B1E27A4A03F001595CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB83B1D27A4A03F001595CC /* MainViewController.swift */; };
 		FA1B9A7527A3AB1E0089689F /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1B9A7427A3AB1E0089689F /* InicioViewController.swift */; };
 		FA31570627A3368800C7FF09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA31570527A3368800C7FF09 /* GoogleService-Info.plist */; };
 		FA31570D27A33EAC00C7FF09 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31570C27A33EAC00C7FF09 /* RegistroViewController.swift */; };
@@ -44,6 +45,7 @@
 		9D52C9DD279A0F8A0078F397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DAC368B279A17D300CC863A /* Registro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registro.storyboard; sourceTree = "<group>"; };
 		9DAC368D279A17F400CC863A /* Recuperar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recuperar.storyboard; sourceTree = "<group>"; };
+		9DB83B1D27A4A03F001595CC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		9E4483BFB47BFFE5B5F1AD73 /* Pods_RidProyect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RidProyect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1B9A7427A3AB1E0089689F /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		FA31570527A3368800C7FF09 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				FA1B9A7427A3AB1E0089689F /* InicioViewController.swift */,
 				FA31570F27A3421200C7FF09 /* Utilities.swift */,
 				FA31573427A34F8C00C7FF09 /* Constants.swift */,
+				9DB83B1D27A4A03F001595CC /* MainViewController.swift */,
 			);
 			path = Codigo;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				FA31571027A3421200C7FF09 /* Utilities.swift in Sources */,
 				9D52C9D2279A0F890078F397 /* SceneDelegate.swift in Sources */,
 				FA31573527A34F8C00C7FF09 /* Constants.swift in Sources */,
+				9DB83B1E27A4A03F001595CC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
