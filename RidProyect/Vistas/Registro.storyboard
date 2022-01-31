@@ -158,11 +158,22 @@
                         <outlet property="errorLabel" destination="hVh-vi-MSB" id="N4C-rC-D8O"/>
                         <outlet property="nombreTextField" destination="TGp-YH-t3N" id="5QJ-iq-ioI"/>
                         <outlet property="passwordTextField" destination="Qgr-fK-yXe" id="tBb-8t-AuH"/>
+                        <segue destination="by5-qR-Pj1" kind="show" identifier="InicioViewController" id="Ccd-tR-P9S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="70" y="94"/>
+        </scene>
+        <!--InicioViewController-->
+        <scene sceneID="8de-3F-tKt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="InicioViewController" id="by5-qR-Pj1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1GA-Hi-req"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWV-NL-Qjb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="100"/>
         </scene>
         <!--Registro View Controller-->
         <scene sceneID="gF8-Ob-X1c">
@@ -178,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHh-Eq-mFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971" y="94"/>
+            <point key="canvasLocation" x="1413" y="100"/>
         </scene>
     </scenes>
     <resources>

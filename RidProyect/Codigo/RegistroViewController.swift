@@ -109,9 +109,6 @@ class RegistroViewController: UIViewController {
     
     func transicionInicio() {
                 
-        let inicioViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.InicioViewController) as? InicioViewController
-                
-            view.window?.rootViewController = inicioViewController
-            view.window?.makeKeyAndVisible()
+        self.performSegue(withIdentifier:"InicioViewController", sender: nil)
     }
 }
