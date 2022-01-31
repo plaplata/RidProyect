@@ -9,6 +9,6 @@ import Foundation
 
 struct Constants {
     struct Storyboard {
-        static let IncioViewController = "InicioVC"
+        static let InicioViewController = "InicioViewController"
     }
 }

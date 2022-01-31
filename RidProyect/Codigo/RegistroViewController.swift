@@ -23,7 +23,7 @@ class RegistroViewController: UIViewController {
     
     @IBOutlet weak var RegistrarseBtn: UIButton!
     
-    @IBOutlet weak var ErrorLabel: UILabel!
+    @IBOutlet weak var errorLabel: UILabel!
     
     @IBAction func clickBtnBack(_ sender:Any) {
         self.navigationController?.popViewController(animated: true);
@@ -39,7 +39,7 @@ class RegistroViewController: UIViewController {
     
     func setUpElements(){
         // Hide the error label
-        ErrorLabel.alpha = 0
+        errorLabel.alpha = 0
             
     }
     
@@ -56,19 +56,21 @@ class RegistroViewController: UIViewController {
         let limpiarPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         if Utilities.esPasswordValido(limpiarPassword) == false{
-            return "Por favor asegurate de que tu contraseña tenga al menos 8 caracteres, que incluya almenos una letra y un caracter especial"
+            return "Por favor asegúrate de que tu contraseña tenga al menos 8 caracteres y que incluya al menos una letra en mayúscula y un número"
         }
         
         return nil
     }
-
-    @IBAction func RegistrarseTapped(_ sender: Any) {
-        
+    
+    
+    @IBAction func registrarseTapped(_ sender: Any) {
+        //Validar campos
         if let error = validarCampos() {
             showError(error)
             return
         }
         
+        //Creando el usuario
         let nombre = nombreTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
         let apellido = apellidosTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
         let email = correoTextField.text!.trimmingCharacters(in:.whitespacesAndNewlines)
@@ -90,23 +92,26 @@ class RegistroViewController: UIViewController {
                 ]) {(error) in
                     
                     if error != nil {
-                        self.showError("Error guardando el usuario")
+                        self.showError("Error guardando los datos del usuario")
                     }
                 }
                 self.transicionInicio()
             }
         }
     }
+    
+    
     func showError(_ message:String) {
         
-        ErrorLabel.text = message
-        ErrorLabel.alpha = 1
+        errorLabel.text = message
+        errorLabel.alpha = 1
     }
-       func transicionInicio() {
+    
+    func transicionInicio() {
                 
-            let IncioViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.IncioViewController) as? InicioViewController
+        let inicioViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.InicioViewController) as? InicioViewController
                 
-                view.window?.rootViewController = IncioViewController
-                view.window?.makeKeyAndVisible()
-        }
+            view.window?.rootViewController = inicioViewController
+            view.window?.makeKeyAndVisible()
+    }
 }

@@ -103,7 +103,7 @@
                                     <color key="titleColor" red="0.82352941180000006" green="0.98039215690000003" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="RegistrarseTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="lKz-1c-bxj"/>
+                                    <action selector="registrarseTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LiR-4q-tio"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVh-vi-MSB">
@@ -152,10 +152,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="X2g-Hg-myC"/>
                     <connections>
-                        <outlet property="ErrorLabel" destination="hVh-vi-MSB" id="N4C-rC-D8O"/>
                         <outlet property="RegistrarseBtn" destination="eEh-zb-r63" id="LXe-BL-aPw"/>
                         <outlet property="apellidosTextField" destination="WAH-uV-6Hv" id="pMb-51-rkl"/>
                         <outlet property="correoTextField" destination="CcY-Ig-OFc" id="eP4-W6-PJc"/>
+                        <outlet property="errorLabel" destination="hVh-vi-MSB" id="N4C-rC-D8O"/>
                         <outlet property="nombreTextField" destination="TGp-YH-t3N" id="5QJ-iq-ioI"/>
                         <outlet property="passwordTextField" destination="Qgr-fK-yXe" id="tBb-8t-AuH"/>
                     </connections>

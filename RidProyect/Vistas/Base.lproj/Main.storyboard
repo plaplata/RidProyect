@@ -166,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="65.625"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Inicio View Controller-->
         <scene sceneID="WCF-BH-oQv">
             <objects>
-                <viewController storyboardIdentifier="InicioVC" id="FHO-kF-9LR" customClass="MainViewController" customModule="RidProyect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InicioViewController" id="FHO-kF-9LR" customClass="InicioViewController" customModule="RidProyect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwi-3e-Gb7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQB-kr-tcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="66"/>
+            <point key="canvasLocation" x="2007" y="66"/>
         </scene>
         <!--RegistroViewController-->
         <scene sceneID="thd-YA-M6K">
