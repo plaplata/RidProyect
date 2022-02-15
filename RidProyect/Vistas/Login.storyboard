@@ -12,7 +12,7 @@
         <!--Iniciar Sesión-->
         <scene sceneID="Guh-PF-8IY">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="phR-qy-vb7" customClass="MainViewController" customModule="RidProyect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="phR-qy-vb7" customClass="LoginViewController" customModule="RidProyect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z5u-vX-QTp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,6 +160,7 @@
                         <outlet property="errorLabel" destination="n1f-VS-NuU" id="19I-2u-neQ"/>
                         <outlet property="ingresarBtn" destination="IZa-wf-xKE" id="ftU-Gv-ZjX"/>
                         <outlet property="passwordTextField" destination="cwn-Yq-dLy" id="jUt-7Z-7Dr"/>
+                        <segue destination="eiU-9x-PTL" kind="show" identifier="InicioViewController" id="3cg-yC-0NA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WdL-db-tlL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,10 +170,12 @@
         <!--InicioViewController-->
         <scene sceneID="yGc-qZ-got">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="InicioViewController" id="eiU-9x-PTL" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="InicioViewController" id="eiU-9x-PTL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9D6-7v-3Ev"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HpH-PR-HVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1714" y="72"/>
+            <point key="canvasLocation" x="1705" y="218"/>
         </scene>
         <!--RegistroViewController-->
         <scene sceneID="g5u-N3-Qyl">

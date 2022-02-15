@@ -10,7 +10,7 @@ import FirebaseAuth
 import FirebaseFirestore
 import Firebase
 
-class MainViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -42,12 +42,7 @@ class MainViewController: UIViewController {
                 self.errorLabel.alpha = 1
             }
             else {
-            /*
-                let IncioViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.IncioViewController) as? InicioViewController
-                    
-                self.view.window?.rootViewController = IncioViewController
-                self.view.window?.makeKeyAndVisible()
-            */
+                self.performSegue(withIdentifier: "InicioViewController", sender: nil)
             }
         }
     }
